@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto.person;
+// option java_outer_classname = "Person";
+
+enum Type {
+  foo = 0;
+  bar = 1;
+  baz = 2;
+}
+
+message Person {
+  string name = 1;
+  Type type = 2;
+}
